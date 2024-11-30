@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+    <title>coding website</title>
+    <style>
+        body
+        {
+        background-color: black;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+        font-size: xx-large;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       h1
+       {
+        display: flex;
+        margin-left: 40px;
+       }
+       h4
+       {
+        font-size: 18px;
+       }
+       p
+       {
+        display:flex;
+        font-size: 15px;
+       }
+       .bx
+       {
+        border-radius: 15px;
+        margin-right: 100px;
+        margin-top: 70px;
+        border: 2px solid white;
+        width: 550px;
+        height: 50px;
+        font-size: 15px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 70px;
+        display: flex;
+        margin-left:1000px;
+       }
+       .tc 
+       {
+        border: 2px solid rgb(87, 86, 86);
+        height: auto;
+        width: 400px;
+        border-radius: 15px;
+        margin-top: 70px;
+        margin-left: 290px;
+        margin-right: 30px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+       .bx p
+       {
+        color: rgb(186,182,182);
+       }
+       
+       .ft
+       {
+            color: antiquewhite;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top:50px;
+            
+        }
+        
+        .tc h4
+        {
+            font-size: 25px;
+            color: white;
+            padding-left: 30px;
+
+        }
+        .but 
+        {
+        padding: 20px;
+        color: rgb(186, 182, 182);
+        font-size: 25px;
+}
+
+        .b {
+            background: black;
+            color: rgb(115, 114, 114);
+            font-size: 20px;
+            border: none;
+        }
+        .b:hover
+        {
+            font-size: 30px;
+        }
+        .mc
+        {
+            font-size: 18px;
+            margin-top: 70px;
+            margin-right: 30px;
+            margin-left:10px;
+            order:1;
+            color:rgb(186, 182, 182);
+        }
+        ul
+        {
+            font-size: 20px;
+            color:rgb(186,182,182)
+        }
+        h3
+        {
+
+            color:antiquewhite;
+            font-size: 25px;
+        }
+        .container
+        {
+            display: flex;
+            width:100%;
+            justify-content: center;
+        }
+    </style>
+    </head>
+<body>
+    <div class="hd">
+        <h1>Coding question to be learn
+        <div class="bx">
+            <h4>Start learning - </h4><p>&nbsp;Essential Interview Queries to Ace</p>
+        </div>
+        </h1>
+    </div>      
+
+   <center><img src="https://img.freepik.com/premium-photo/programmer-coding-laptop-with-digital-interface_63085-2903.jpg?size=626&ext=jpg&ga=GA1.1.853937327.1720014854&semt=sph" heigth="400px" width="900px"></center>
+   <br><br>
+    <div class="container">
+    <div class="tc">
+        
+        <div class="but">
+            <h4>Table of Contents</h4>
+            <button class="b" type="submit" >TRIANGLE SUM[PATTERN]</button><br><br>
+            <button class="b" type="submit" >HOLLOW SQUARE[PATTERN]</button><br><br>
+            <button class="b" type="submit" >ARRAY LIST</button><br><br>
+            <button class="b" type="submit" >INTERCHANGE ROW</button><br><br>
+            <button class="b" type="submit" >PERFECT NUMBER[OOPS]</button><br><br>
+            <button class="b" type="submit" >FUNCTION OVERLOADING</button><br><br>
+            <button class="b" type="submit" >VIRTUAL FUNCTION</button><br><br>
+            <button class="b" type="submit" >CONSTRUCTOR</button><br><br>
+            <button class="b" type="submit" >OVERRIDE SUM</button><br><br>
+            <button class="b" type="submit" >PRIME FACTORIZATION</button><br><br>
+
+
+            
+            
+        </div>
+    </div>
+    <div class="mc">
+        <h3>TRIANGLE SUM[PATTERN]</h3>
+        <ul>
+            <li><b>Step 1:&nbsp;</b>Read an integer n from the user.</li>
+            <li><b>Step 2:&nbsp;</b>Iterate i from 0 to n (inclusive).</li>
+            <li><b>Step 3:&nbsp;</b>This controls the number of rows to be printed.</li>
+            <li><b>Step 4:&nbsp;</b>For each i, iterate j from n-i down to 0 (inclusive).</li>
+            <li><b>Step 5:&nbsp;</b>Print spaces (" ") to align the pattern correctly.</li>
+            <li><b>Step 6:&nbsp;</b>For each i, iterate k from 1 to i (inclusive),Print stars ("* ").</li>
+            <li><b>Step 7:&nbsp;</b>After printing the stars for the current row (i), move to the next line (cout << endl;).</li>
+            <li><b>Step 8:&nbsp;</b>Repeat steps 2-5 until all rows are printed.</li>
+            <li><b>Step 9:&nbsp;</b>Display the pattern as specified.</li>
+        </ul>
+        <br><br>
+        <center><img src="imgtri1.png" width="100%" height="80%"></center>
+        <br><br>
+        <h3>HOLLOW SQUARE[PATTERN]</h3>
+        <ul>
+            <li><b>Step 1:&nbsp;</b>Read an integer n from the user.</li>
+            <li><b>Step 2:&nbsp;</b>Loop through each row i from 1 to n.</li>
+            <li><b>Step 3:&nbsp;</b> Loop through each column j from 1 to n.</li>
+            <li><b>Step 4:&nbsp;</b>If i is 1 or i is n, or j is 1 or j is n, print "*" (border).</b></li>
+            <li><b>Step 5:&nbsp;</b>Otherwise, print " " (interior).</li>
+            <li><b>Step 6:&nbsp;</b>Move to the next line after printing each row.</li>
+            <li><b>Step 7:&nbsp;</b>Display the rectangular pattern with borders made of "*".</li>
+        </ul>
+        <br><br>
+        <center><img src="sq.png"></center>
+        <br><br>
+        <h3>ARRAY LIST</h3>
+        <ul>
+            <li><b>Step 1:&nbsp;</b>  Read the integer n, representing the size of the array.</li>
+            <li><b>Step 2:&nbsp;</b>Read the array arr of size n.</li>
+            <li><b>Step 3:&nbsp;</b> Initialize maxSum to a very small number (or the value of the first element arr[0]).</li>
+            <li><b>Step 4:&nbsp;</b>Initialize sum to 0.</b></li>
+            <li><b>Step 5:&nbsp;</b>Traverse each element arr[i] from 0 to n-1.</li>
+            <li><b>Step 6:&nbsp;</b>Update sum by adding arr[i] to it.</li>
+            <li><b>Step 7:&nbsp;</b>Update maxSum to be the maximum of maxSum and sum.</li>
+            <li><b>Step 8:&nbsp;</b>If sum becomes negative, reset sum to 0 (start a new potential subarray).</li>
+            <li><b>Step 9:&nbsp;</b>maxSum is the maximum subarray sum found.</li>
+        </ul>
+        <br><br>
+        <center><img src="ar.png"></center>
+        <br><br>
+        <h3>INTERCHANGE ROW</h3>
+        <ul>
+            <li><b>Step 1:&nbsp;</b>Initialize Matrix: Create a 4x4 matrix A. </li>
+            <li><b>Step 2:&nbsp;</b>Read the array arr of size n.</li>
+            <li><b>Step 3:&nbsp;</b>Input Matrix Elements: Read 16 integers from input to populate matrix A.</li>
+            <li><b>Step 4:&nbsp;</b>
+                Swap Rows: Swap the elements of the first row with the elements of the last row.</b></li>
+            <li><b>Step 5:&nbsp;</b>For each column index j from 0 to 3.</li>
+            <li><b>Step 6:&nbsp;</b>Swap A[0][j] with A[3][j].</li>
+            <li><b>Step 7:&nbsp;</b>Print the matrix A after swapping.</li>
+        </ul>
+        <br><br>
+        <center><img src="interr.png"></center>
+        <br><br>
+        <h3>PERFECT NUMBER[CLASS & OBJECT]</h3>
+        <ul>
+            <li><b>Step 1:&nbsp;</b> Class Definition: Define a class Vega with a public member variable n.</li>
+            <li><b>Step 2:&nbsp;</b> Sum Calculation: Implement a function sum() inside the class to.</li>
+            <li><b>Step 3:&nbsp;</b>Calculate the sum of proper divisors of n.</li>
+            <li><b>Step 4:&nbsp;</b>Check if n is a perfect number.</b></li>
+            <li><b>Step 5:&nbsp;</b>Print appropriate messages based on whether n is perfect or not.</li>
+            <li><b>Step 6:&nbsp;</b>Main Function:Create an object ob of class Vega.</li>
+            <li><b>Step 7:&nbsp;</b>Prompt the user to enter input (n).</li>
+            <li><b>Step 8:&nbsp;</b>Call sum() method using a pointer to the object (p->sum()).</li>
+        </ul>
+        <br><br>
+        <center><img src="class.png"></center>
+        <br><br>
+        <h3>FUNCTION OVERLOADING</h3>
+        <ul>
+            <li><b>Step 2:&nbsp;</b>Include the <iostream> library for input and output operations.</li>
+            <li><b>Step 1:&nbsp;</b> Define a class Vega with:Public integer variables a and b,Public float variables c and d.</li>
+            <li><b>Step 3:&nbsp;</b>Function add(): Calculate and return the sum of a and b.</li>
+            <li><b>Step 4:&nbsp;</b>Function add(float c1, float d1):Calculate and return the product of c1 and d1.</li>
+            <li><b>Step 5:&nbsp;</b>Create an object ob of class Vega,Declare float variables m and n.</li>
+            <li><b>Step 6:&nbsp;</b>Input Operations:Prompt the user to enter integer values for ob.a and ob.b.Prompt the user to enter float values for m and n.</li>
+            <li><b>Step 7:&nbsp;</b>Print the result of ob.add() to output the sum of ob.a and ob.b.Print the result of ob.add(m, n) to output the product of m and n.</li>
+            <li><b>Step 8:&nbsp;</b>Return 0 to indicate successful execution of main().</li>
+        </ul>
+        <br><br>
+        <center><img src="over.png"></center>
+        <br><br>
+        <h3>VIRTUAL FUNCTION</h3>
+        <ul>
+            <li><b>Step 1:&nbsp;</b>Include the <iostream> library for input and output operations.</li>
+            <li><b>Step 2:&nbsp;</b>Define a class Base with:Public integer variables a and b.</li>
+            <li><b>Step 3:&nbsp;</b>A virtual function add() that reads values for a and b, calculates their sum, and prints it prefixed with "Base: ".</li>
+            <li><b>Step 4:&nbsp;</b>Define a class Dev with:Public integer variables c and d.</li>
+            <li><b>Step 5:&nbsp;</b>A virtual function add() that reads values for c and d, calculates their sum, and prints it prefixed with "Derived: ".</li>
+            <li><b>Step 6:&nbsp;</b>Create objects ob1 of class Base and ob of class Dev.</li>
+            <li><b>Step 7:&nbsp;</b>Call the add() function for each object.</li>
+            <li><b>Step 8:&nbsp;</b>For ob1, it prompts the user to enter values for a and b, calculates their sum, and outputs it.</li>
+            <li><b>Step 9:&nbsp;</b>For ob,it prompts the user to enter values for c and d, calculates their sum, and outputs it.</li>
+            <li><b>Step 10:&nbsp;</b>End of Program:Return 0 to indicate successful execution of main().</li>
+        </ul>
+        <br><br>
+       <center><img src="vir.png"></center>
+        <br><br>
+        <h3>CONSTRUCTOR[OOPS]</h3>
+        <ul>
+            <li><b>Step 1:&nbsp;</b>Include the <iostream> library for input and output operations.</li>
+            <li><b>Step 2:&nbsp;</b> Define a class Vega with:A public string variable n.</li>
+            <li><b>Step 3:&nbsp;</b>A constructor (Vega()), which:Outputs "Hi" to the console.</li>
+            <li><b>Step 4:&nbsp;</b>Attempts to output the value of n (Note: n is uninitialized here, so its initial value is unpredictable).</li>
+            <li><b>Step 5:&nbsp;</b>A member function display() that:Outputs the value of n.</li>
+            <li><b>Step 6:&nbsp;</b>Create an object ob of class Vega.</li>
+            <li><b>Step 7:&nbsp;</b>    Use getline(cin, ob.n) to read a line of input from the user into the string variable ob.n.</li>
+            <li><b>Step 8:&nbsp;</b>Call ob.display() to output the value of ob.n.</li>
+            <li><b>Step 9:&nbsp;</b>End of Program:Return 0 to indicate successful execution of main().</li>
+        </ul>
+        <br><br>
+       <center><img src="cons.png"></center>
+        <br><br>
+        <h3>OVERRIDE SUM</h3>
+        <ul>
+            <li><b>Step 1:&nbsp;</b>Include the <iostream> library for input and output operations.</li>
+            <li><b>Step 2:&nbsp;</b>Define a class Base with:A public function override(int x, int y).</li>
+            <li><b>Step 3:&nbsp;</b>Prints the sum of x and y followed by a newline.</li>
+            <li><b>Step 4:&nbsp;</b>Define Class Dev (Derived from Base):Define a class Dev that inherits publicly from Base.</li>
+            <li><b>Step 5:&nbsp;</b>Override the override(int x, int y) function from Base with:Functionality that prints the product of x and y.</li>
+            <li><b>Step 6:&nbsp;</b>Main Function (main()):Create objects ob of class Base and ob1 of class Dev.</li>
+            <li><b>Step 7:&nbsp;</b>Call ob.override(a, b) to print the sum of a and b using the function from Base.</li>
+            <li><b>Step 8:&nbsp;</b>Call ob1.override(a, b) to print the product of a and b using the overridden function from Dev.</li>
+        </ul>
+        <br><br>
+       <center><img src="ride.png"></center>
+        <br><br>
+        <h3>PRIME FACTORIZATION</h3>
+        <ul>
+            <li><b>Step 1:&nbsp;</b>Include the <iostream> library for input and output operations.</li>
+            <li><b>Step 2:&nbsp;</b>Define a class Vega with:A private integer variable n.</li>
+            <li><b>Step 3:&nbsp;</b>A public function prime(int a) that assigns the value of a to n.</li>
+            <li><b>Step 4:&nbsp;</b>A public function Factor() that calculates and prints the prime factors of n.</li>
+            <li><b>Step 5:&nbsp;</b>Main Function (main()):Create an object ob of class Vega.</li>
+            <li><b>Step 6:&nbsp;</b>Call ob.prime(a) to assign the value of a to ob.n.</li>
+            <li><b>Step 7:&nbsp;</b>Call ob.Factor() to calculate and print the prime factors of ob.n.</li>
+            <li><b>Step 8:&nbsp;</b>Return 0 to indicate successful execution of main().</li>
+        </ul>
+        <br><br>
+       <center><img src="prime.png"></center>
+        <br><br>
+    </div>
+    </div>
+    <hr>
+    <div class="ft">
+        <hr>
+        <em>
+            <strong>Phone:</strong> <a href="#">8765678964</a><br>
+            <strong>Email:</strong> <a href="mailto:vegashini@gmail.com">vegashini@gmail.com</a><br>
+            <strong>Address:</strong> 123 ABC St,Tirupur.<br>
+            <strong>Social Media:</strong> Follow us on <a href="https://twitter.com/yourpage">Twitter</a>
+        </em>
+    </div>
+    <body>
+    </html>
